@@ -1,0 +1,22 @@
+@media only screen and (max-width : 768px) {
+/* Styles */
+    .mainBody{
+        flex-direction: column;
+    }
+    .columnOne{
+        margin-right: 1em;
+        border-bottom: 0.5em solid $fontColor;
+    }
+    .columnTwo{
+        margin-left: 1em;
+    }
+    .mainBody > * {
+        flex:1;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+        .columnOne{
+            border-right: 0.5em solid $fontColor;
+        }
+}
