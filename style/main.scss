@@ -1,38 +1,89 @@
 /*# sourceMappingURL=main.css */
 @import 'variables';
 @import 'mqueries';
+@import 'normalize';
 
 * {
     margin: 0;
 }
-
 html{
     height: 100%;
 }
-
 body {
     display:grid;
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 1fr auto 1fr; //[page-end];
-    // flex-flow: column wrap;
-    background-color: $primaryColor;
-    //font-family: $fontStack;
-    margin: 0px;
+    // grid-template-columns: auto;
+    grid-template-rows: 1fr auto; //[page-end];
     min-height: 100%;
+    max-width: 100%;
+    // overflow-x: hidden; 
 }
-
-.mainBox {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
+.mainBody {
+    display: flex;
+    flex-flow: column wrap;
+    // width: 100vw;
+    max-width: 100%;
     font-family: $fontStack;
 }
-
-.subBox1{
-    display:subgrid;
-    background-color: orange;
+.nav{
+    display:flex;
+    background-color: $offWhite;
+    justify-content: space-around;
+    align-items: center;
+    height: 4em;
+}
+.box1{
+    display: flex;
+    background-color: $backgroundColor;
+    padding-left: 5%;
+    height: 80vh;
+}
+.box2{    
+    display: flex;
+    background-color: #8ff;
+    padding-left: 5%;
+    height: 80vh;
+}
+.box3{    
+    display: flex;
+    background-color: #1ff;
+    padding-left: 5%;
+    height: 80vh;
+}
+.footer{
+    background-color: $offWhite;
+    height: 3em;
+    padding-right: 4em;
+    // width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.subBox1:h1{
-    color:red;
+.navItem{
+    // color:red;
+}
+#navBar{
+    display: flex;
+    flex: row wrap;
+}
+#navBar 
+#navBar.a{
+    text-decoration: none;
+}
+#main{
+    // color: blue;
+}
+#contact{
+    // color: red;
+}
+#about{
+    // color: pink;
+}
+
+a:-webkit-any-link{
+    text-decoration: none;
+}
+a:hover{
+    background-color: $backgroundColor;
+    text-decoration: bold;
 }
