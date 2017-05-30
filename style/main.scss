@@ -19,7 +19,6 @@ body {
     //font-family: $fontStack;
     margin: 0px;
     min-height: 100%;
-    font-color: blue;
 }
 
 .mainBox {
@@ -29,3 +28,11 @@ body {
     font-family: $fontStack;
 }
 
+.subBox1{
+    display:subgrid;
+    background-color: orange;
+}
+
+.subBox1:h1{
+    color:red;
+}

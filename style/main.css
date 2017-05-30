@@ -29,13 +29,19 @@ body {
   grid-template-rows: 1fr auto 1fr;
   background-color: #187585;
   margin: 0px;
-  min-height: 100%;
-  font-color: blue; }
+  min-height: 100%; }
 
 .mainBox {
   display: grid;
   width: 100vw;
   height: 100vh;
   font-family: Alegreya, "Times New Roman"; }
+
+.subBox1 {
+  display: subgrid;
+  background-color: orange; }
+
+.subBox1:h1 {
+  color: red; }
 
 /*# sourceMappingURL=main.css.map */
