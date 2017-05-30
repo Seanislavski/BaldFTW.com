@@ -461,7 +461,8 @@ body {
 
 #navBar {
   display: flex;
-  flex: row wrap; }
+  flex: row wrap;
+  list-style-type: none; }
 
 #navBar
 #navBar.a {
