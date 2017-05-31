@@ -16,6 +16,18 @@ body {
     min-height: 100%;
     max-width: 100%;
 }
+a:link{
+    color:red;
+}
+a:visited{
+    color: lightblue;
+}
+a:hover{
+    color: hotpink;
+}
+a:active{
+    color: blue;
+}
 .mainBody {
     display: flex;
     flex-flow: column wrap;
@@ -36,6 +48,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    padding-top: 4em;
 }
 .box1{
     display: flex;
@@ -65,7 +78,11 @@ body {
 }
 
 .navItem{
-    // color:red;
+    color:red;
+    width: 100%;
+}
+.navItem.a{
+
 }
 #navBar{
     display: flex;
@@ -73,11 +90,12 @@ body {
     list-style-type: none;
     justify-content: space-between;
     width: 20%;
+    font-weight: bold;
 }
-#navBar
 #navBar.a{
     text-decoration: none;
 }
+
 #main{
     // color: blue;
 }
