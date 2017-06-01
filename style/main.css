@@ -5,18 +5,21 @@
   .mainBody {
     flex-direction: column; }
 
-  .columnOne {
-    margin-right: 1em;
-    border-bottom: 0.5em solid #CF2F4E; }
+  h1 {
+    font-size: 20px; }
 
-  .columnTwo {
-    margin-left: 1em; }
+  h3 {
+    font-size: 15px; }
 
-  .mainBody > * {
-    flex: 1; } }
+  #navBar {
+    flex-flow: column wrap; } }
+@media only screen and (min-width: 900px) {
+  #navBar {
+    padding: 0; } }
 @media only screen and (min-width: 768px) {
-  .columnOne {
-    border-right: 0.5em solid #CF2F4E; } }
+  #navBar {
+    width: 250px;
+    flex-flow: row nowrap; } }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -57,7 +60,6 @@ section {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
-  font-size: 2em;
   margin: 0.67em 0; }
 
 /* Grouping content
@@ -444,16 +446,17 @@ a:active {
   background-color: #F7F7F7;
   justify-content: space-around;
   align-items: center;
-  height: 4em;
+  height: 5em;
   position: fixed;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 10px solid lightblue; }
 
 .box {
   color: #CF2F4E;
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  padding-top: 4em; }
+  padding: 90px 1em 1em 1em; }
 
 .box1 {
   display: flex;
@@ -483,15 +486,14 @@ a:active {
 
 .navItem {
   color: red;
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
 
 #navBar {
   display: flex;
-  flex: row wrap;
   list-style-type: none;
   justify-content: space-between;
-  width: 20%;
-  font-weight: bold; }
+  align-content: center; }
 
 #navBar.a {
   text-decoration: none; }

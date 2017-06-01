@@ -1,6 +1,6 @@
 /*# sourceMappingURL=main.css */
-@import 'variables';
 @import 'mqueries';
+@import 'variables';
 @import 'normalize';
 
 * {
@@ -39,16 +39,18 @@ a:active{
     background-color: $offWhite;
     justify-content: space-around;
     align-items: center;
-    height: 4em;
+    height: 5em;
     position: fixed;
     width: 100%;
+    border-bottom: 10px solid lightblue;
 }
 .box{
     color: $fontColor;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    padding-top: 4em;
+    // padding-top: 4em;
+    padding: 90px 1em 1em 1em;
 }
 .box1{
     display: flex;
@@ -80,17 +82,15 @@ a:active{
 .navItem{
     color:red;
     width: 100%;
+    margin: 0;
 }
-.navItem.a{
 
-}
+
 #navBar{
     display: flex;
-    flex: row wrap;
     list-style-type: none;
     justify-content: space-between;
-    width: 20%;
-    font-weight: bold;
+    align-content: center;
 }
 #navBar.a{
     text-decoration: none;
