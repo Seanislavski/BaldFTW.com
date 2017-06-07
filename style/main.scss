@@ -39,9 +39,9 @@ a:active{
     background-color: $offWhite;
     justify-content: space-around;
     align-items: center;
-    height: 10%;
     position: fixed;
     width: 100%;
+    height: 10vh;
     // border-bottom: 1% solid lightblue;
 }
 #navBar{
@@ -53,27 +53,34 @@ a:active{
 // #navBar.a{
 //     text-decoration: none;
 // }
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10vh;
+    visibility: hidden;
+}
 .box{
-    // color: $fontColor;
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+    top: 0;
     // padding: 10% 1em 1em 1em;
-    padding-top: 10%;
-    height: 90%;
+    // padding-top: 10%;
+    height: 90vh;
 }
-.inBox{
+.inBox{ //every item in "#box1"
     //added from EB
     background-color: rgba(68, 68, 68, 0.7);
     color: #fff;
     // border: 2px solid black;
     // border-radius: 5px;
 }
-.box1{
-    display: grid;
+#box1{
+    // display: grid;
     // background-color: $backgroundColor;
     background-image: url("https://images.unsplash.com/photo-1489257712451-3a66755ca19c?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
     //from EB
+    padding-top: 10vh;
     // width: 100vw;
     // border: 2px solid #CCC;
     // display: grid;
@@ -82,17 +89,26 @@ a:active{
     grid-template-rows: repeat(2, 50%);
     // align-content: space-around;
     // justify-content: space-between;
+    // border-bottom: 10vh solid rgba(0,0,0,0);
+    // background-clip: border-box;
+    // background-origin: border-box;
 }
-.box2{
+#box2{
     display: grid;
+    top: 0;
+    // border-top: 10vh solid rgba(0,0,0,0);
+    // background-clip: border-box;
+    // background-origin: border-box;
     // background-color: #8ff;
     background-image: url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+    // padding-top: 10vh;
 }
-.box3{
+#box3{
     display: grid;
     // background-color: #1ff;
     color: #fff;
     background-image: url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+    // padding-top: 10vh;
 }
 .item1 {
     // grid-area: 1/1/2/5;
@@ -130,24 +146,19 @@ a:active{
 }
 
 
-
-
-#main{
-    // color: blue;
-}
-#contact{
-    // color: red;
-}
-#about{
-    // color: pink;
-}
-
 a:-webkit-any-link{
     text-decoration: none;
 }
 a:hover{
     background-color: $backgroundColor;
     text-decoration: bold;
+}
+
+.jumptarget::before {
+  content:"";
+  display:block;
+  height:10vh; /* fixed header height*/
+  margin:-10vh 0 0; /* negative fixed header height */
 }
 
 
