@@ -420,17 +420,14 @@ body {
   min-height: 100%;
   max-width: 100%; }
 
-a:link {
-  color: red; }
+a:-webkit-any-link {
+  text-decoration: none; }
 
-a:visited {
-  color: lightblue; }
-
-a:hover {
-  color: hotpink; }
-
-a:active {
-  color: blue; }
+a.anchor {
+  display: block;
+  position: relative;
+  top: -10vh;
+  visibility: hidden; }
 
 .mainBody {
   flex-flow: column wrap;
@@ -450,13 +447,22 @@ a:active {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  align-content: center; }
+  align-content: center;
+  align-items: center;
+  margin: 0;
+  border: 0;
+  padding: 0; }
 
-a.anchor {
-  display: block;
-  position: relative;
-  top: -10vh;
-  visibility: hidden; }
+.navItem {
+  margin: 0;
+  padding: 1rem;
+  border: 0;
+  border-radius: 1em;
+  background-color: grey; }
+
+.navItem:hover {
+  background-color: red;
+  color: fuscia; }
 
 .box {
   background-repeat: no-repeat;
@@ -508,18 +514,6 @@ a.anchor {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
-
-.navItem {
-  color: red;
-  width: 100%;
-  margin: 0; }
-
-a:-webkit-any-link {
-  text-decoration: none; }
-
-a:hover {
-  background-color: #E0FFFD;
-  text-decoration: bold; }
 
 .jumptarget::before {
   content: "";

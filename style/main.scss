@@ -17,16 +17,21 @@ body {
     max-width: 100%;
 }
 a:link{
-    color:red;
 }
 a:visited{
-    color: lightblue;
 }
 a:hover{
-    color: hotpink;
 }
 a:active{
-    color: blue;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10vh;
+    visibility: hidden;
 }
 .mainBody {
     // display: flex;
@@ -49,16 +54,27 @@ a:active{
     list-style-type: none;
     justify-content: space-between;
     align-content: center;
+    align-items: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.navItem{
+    margin: 0;
+    padding: 1rem;
+    border: 0;
+    border-radius: 1em;
+    background-color: grey;
+}
+.navItem:hover{
+    background-color: red;
+    color: fuscia;
 }
 // #navBar.a{
 //     text-decoration: none;
 // }
-a.anchor {
-    display: block;
-    position: relative;
-    top: -10vh;
-    visibility: hidden;
-}
+
 .box{
     background-repeat: no-repeat;
     background-position: top center;
@@ -123,20 +139,9 @@ a.anchor {
     align-items: center;
 }
 
-.navItem{
-    color:red;
-    width: 100%;
-    margin: 0;
-}
 
 
-a:-webkit-any-link{
-    text-decoration: none;
-}
-a:hover{
-    background-color: $backgroundColor;
-    text-decoration: bold;
-}
+
 
 .jumptarget::before {
   content:"";
