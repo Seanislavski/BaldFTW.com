@@ -486,12 +486,14 @@ a.anchor {
 
 #box2 {
   display: flex;
-  background-image: url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg="); }
+  background-image: url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+  justify-content: center; }
 
 #box3 {
   display: flex;
   color: #fff;
-  background-image: url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg="); }
+  background-image: url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+  justify-content: center; }
 
 .l1 {
   grid-area: 1/1/3/1;
@@ -525,5 +527,11 @@ a.anchor {
 
 .leftBarNav {
   list-style-type: none; }
+
+#slogan {
+  color: red; }
+
+.termite {
+  align-self: center; }
 
 /*# sourceMappingURL=main.css.map */
