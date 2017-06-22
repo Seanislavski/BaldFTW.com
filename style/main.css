@@ -1,5 +1,5 @@
 /*# sourceMappingURL=main.css */
-@import url("https://fonts.googleapis.com/css?family=Alegreya|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Raleway");
 @media only screen and (max-width: 768px) {
   /* Styles */
   .mainBody {
@@ -469,7 +469,8 @@ a.anchor {
   background-position: top center;
   background-size: cover;
   top: 0;
-  height: 90vh; }
+  height: 90vh;
+  font-family: "Raleway", "Open Sans", sans-serif; }
 
 .inBox {
   display: flex;
@@ -532,6 +533,9 @@ a.anchor {
   color: red; }
 
 .termite {
-  align-self: center; }
+  align-self: center;
+  border-radius: 2em;
+  margin: 4em;
+  line-height: 1.75em; }
 
 /*# sourceMappingURL=main.css.map */

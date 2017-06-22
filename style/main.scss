@@ -83,6 +83,7 @@ a.anchor {
     // padding: 10% 1em 1em 1em;
     // padding-top: 10%;
     height: 90vh;
+    font-family: $sansStack;
 }
 .inBox{ //every item in "#box1"
     //added from EB
@@ -154,5 +155,7 @@ a.anchor {
 }
 .termite{
     align-self: center;
-
+    border-radius: 2em;
+    margin: 4em;
+    line-height: 1.75em;
 }
