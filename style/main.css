@@ -420,6 +420,9 @@ body {
   min-height: 100%;
   max-width: 100%; }
 
+a:link {
+  color: pink; }
+
 a:-webkit-any-link {
   text-decoration: none; }
 
@@ -480,20 +483,20 @@ a.anchor {
 
 #box1 {
   display: grid;
-  background-image: url("https://images.unsplash.com/photo-1489257712451-3a66755ca19c?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+  background-image: url("../images/bg1.jpg");
   padding-top: 10vh;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(2, 50%); }
 
 #box2 {
   display: flex;
-  background-image: url("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+  background-image: url("../images/bg2.jpg");
   justify-content: center; }
 
 #box3 {
   display: flex;
   color: #fff;
-  background-image: url("https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+  background-image: url("../images/bg3.jpg");
   justify-content: center; }
 
 .l1 {
@@ -518,19 +521,11 @@ a.anchor {
   justify-content: flex-end;
   align-items: center; }
 
-.jumptarget::before {
-  content: "";
-  display: block;
-  height: 10vh;
-  /* fixed header height*/
-  margin: -10vh 0 0;
-  /* negative fixed header height */ }
-
 .leftBarNav {
   list-style-type: none; }
 
 #slogan {
-  color: red; }
+  color: #123; }
 
 .termite {
   align-self: center;

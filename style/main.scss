@@ -17,6 +17,7 @@ body {
     max-width: 100%;
 }
 a:link{
+    color:pink;
 }
 a:visited{
 }
@@ -59,7 +60,6 @@ a.anchor {
     border: 0;
     padding: 0;
 }
-
 .navItem{
     margin: 0;
     padding: 1rem;
@@ -96,7 +96,7 @@ a.anchor {
 }
 #box1{
     display: grid;
-    background-image: url($techBackground1);
+    background-image: url($bg1);
     padding-top: 10vh;
     // grid-gap: 10px;
     grid-template-columns: repeat(4, 25%);
@@ -106,14 +106,14 @@ a.anchor {
 }
 #box2{
     display:flex;
-    background-image: url($techBackground2);
+    background-image: url($bg2);
     justify-content: center;
 
 }
 #box3{
     display: flex;
     color: #fff;
-    background-image: url($techBackground3);
+    background-image: url($bg3);
     justify-content: center;
 }
 .l1 {
@@ -141,17 +141,17 @@ a.anchor {
     justify-content: flex-end;
     align-items: center;
 }
-.jumptarget::before {
-  content:"";
-  display:block;
-  height:10vh; /* fixed header height*/
-  margin:-10vh 0 0; /* negative fixed header height */
-}
+// .jumptarget::before {
+  // content:"";
+  // display:block;
+  // height:10vh;  fixed header height
+  // margin:-10vh 0 0; /* negative fixed header height */
+// }
 .leftBarNav {
     list-style-type: none;
 }
 #slogan{
-    color: red;
+    color: #123;
 }
 .termite{
     align-self: center;
