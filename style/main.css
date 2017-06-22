@@ -420,18 +420,6 @@ body {
   min-height: 100%;
   max-width: 100%; }
 
-a:link {
-  color: red; }
-
-a:visited {
-  color: lightblue; }
-
-a:hover {
-  color: hotpink; }
-
-a:active {
-  color: blue; }
-
 .mainBody {
   flex-flow: column wrap;
   max-width: 100%;
@@ -510,7 +498,6 @@ a.anchor {
   align-items: center; }
 
 .navItem {
-  color: red;
   width: 100%;
   margin: 0; }
 
@@ -530,6 +517,22 @@ a:hover {
   /* negative fixed header height */ }
 
 .leftBarNav {
-  list-style-type: none; }
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.lbnItem {
+  border: 1px solid black;
+  border-radius: 3rem;
+  padding: 1em;
+  margin: 1em;
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.lbnItem:hover {
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.1); }
 
 /*# sourceMappingURL=main.css.map */

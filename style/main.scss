@@ -17,16 +17,12 @@ body {
     max-width: 100%;
 }
 a:link{
-    color:red;
 }
 a:visited{
-    color: lightblue;
 }
 a:hover{
-    color: hotpink;
 }
 a:active{
-    color: blue;
 }
 .mainBody {
     // display: flex;
@@ -50,9 +46,7 @@ a:active{
     justify-content: space-between;
     align-content: center;
 }
-// #navBar.a{
-//     text-decoration: none;
-// }
+
 a.anchor {
     display: block;
     position: relative;
@@ -124,7 +118,6 @@ a.anchor {
 }
 
 .navItem{
-    color:red;
     width: 100%;
     margin: 0;
 }
@@ -147,4 +140,45 @@ a:hover{
 
 .leftBarNav {
     list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lbnItem{
+    border: 1px solid black;
+    border-radius: 3rem;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(0,0,0,.8)
+}
+
+.lbnItem:hover{
+    color: yellow;
+    background-color: rgba(0,0,0,.4);
+    border-color: rgba(0,0,0,.1);
+}
+
+#t1{
+}
+
+#t1:hover{
+}
+
+#t2{
+
+}
+
+#t2:hover{
+
+}
+
+#t3{
+
+
+}
+
+#t3:hover{
+
 }
