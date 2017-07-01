@@ -1,16 +1,21 @@
 //variables
+$pad: 1rem;
+$pad1: 2rem;
+//colors
 $primaryColor:    #187585;
 $backgroundColor: #E0FFFD;
 $offWhite: #F7F7F7;
 $fontColor:          #CF2F4E;
 $subFontColor:   #033088;
-$fontStack:        Alegreya, 'Times New Roman';
-$sansStack:     'Raleway','Open Sans', sans-serif;
 $gradColor:         rgba(28,171,196,1.0);
 //$gradColor:         rgba(33,194,224,1.0);
 $gradTo:            rgba(0,208,244,1.0);
 // $gradTo:            rgba(137,237,255,1.0);
 $transparentWhite: rgba(227,246,246,0.8);
+$highlightColor:      #5BFFFF;
+$boxBG: rgba(68, 68, 68, 0.7);
+$notBlk:    #2B2B2B;
+
 //images?
 $stegoPic: "https://openclipart.org/image/2400px/svg_to_png/222933/Stegosaurus.png";
 $oatmealBg: "images/oatmealbg.jpg";
@@ -21,7 +26,11 @@ $techBackground3: "https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?
 $bg1: "../images/bg1.jpg";
 $bg2: "../images/bg2.jpg";
 $bg3: "../images/bg3.jpg";
+$me: "./images/me.jpg";
+
 //fonts
+$fontStack:        Alegreya, 'Times New Roman';
+$sansStack:     'Raleway','Open Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Raleway');
 
 

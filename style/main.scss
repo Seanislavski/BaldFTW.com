@@ -17,7 +17,7 @@ body {
     max-width: 100%;
 }
 a:link{
-    color:pink;
+    color: $highlightColor;
 }
 a:visited{
 }
@@ -48,7 +48,7 @@ a.anchor {
     position: fixed;
     width: 100%;
     height: 10vh;
-    // border-bottom: 1% solid lightblue;
+    border-bottom: .3rem solid $highlightColor;
 }
 #navBar{
     display: flex;
@@ -62,47 +62,38 @@ a.anchor {
 }
 .navItem{
     margin: 0;
-    padding: 1rem;
+    padding: $pad;
     border: 0;
-    border-radius: 1em;
-    background-color: grey;
+    border-radius: $pad;
+    background-color: $notBlk;
 }
 .navItem:hover{
-    background-color: red;
-    color: fuscia;
+    background-color: $boxBG;
+    // color: fuscia;
+    //
 }
-// #navBar.a{
-//     text-decoration: none;
-// }
-
 .box{
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     top: 0;
-    // padding: 10% 1em 1em 1em;
-    // padding-top: 10%;
     height: 90vh;
     font-family: $sansStack;
 }
-.inBox{ //every item in "#box1"
-    //added from EB
+.inBox{
     display: flex;
-    background-color: rgba(68, 68, 68, 0.7);
+    background-color: $boxBG;
     color: #fff;
-    padding: 1em;
-    // border: 2px solid black;
-    // border-radius: 5px;
+    padding: $pad;
+    margin-top: $pad1;
+    margin-bottom: $pad1;
 }
 #box1{
     display: grid;
     background-image: url($bg1);
     padding-top: 10vh;
-    // grid-gap: 10px;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 50%);
-    // align-content: space-around;
-    // justify-content: space-between;
 }
 #box2{
     display:flex;
@@ -120,42 +111,43 @@ a.anchor {
     grid-area: 1/1/3/1;
     display: flex;
     border-right: 3px double black;
-  // grid-column: 1 / 5;
-  // grid-row: 1/2;
+    margin-left: $pad1;
+    margin-right: $pad;
 }
 .c1 {
     grid-area: 1/2/3/4;
     display: flex;
-  // justify-content: page-end;
 }
 .r1 {
     grid-area: 1/4/3/5;
     display: flex;
     border-left: 3px double black;
+    margin-right: $pad1;
 }
 .footer{
     background-color: $offWhite;
-    height: 3em;
-    padding-right: 4em;
+    height: 3rem;
+    padding-right: 4rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-// .jumptarget::before {
-  // content:"";
-  // display:block;
-  // height:10vh;  fixed header height
-  // margin:-10vh 0 0; /* negative fixed header height */
-// }
 .leftBarNav {
     list-style-type: none;
 }
+#title{
+    font-size: 2rem;
+}
 #slogan{
-    color: #123;
+    font-size: 1.5rem;
 }
 .termite{
     align-self: center;
-    border-radius: 2em;
-    margin: 4em;
-    line-height: 1.75em;
+    border-radius: 2rem;
+    margin: 4rem;
+    line-height: 1.75rem;
+}
+.lgsymb{
+    font-size: 4rem;
+    font-weight: bolder;
 }
