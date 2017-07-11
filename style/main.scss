@@ -20,10 +20,12 @@ a:link{
     color: $highlightColor;
 }
 a:visited{
+    color: $lightGrey;
 }
 a:hover{
 }
 a:active{
+    color: $lightGrey;
 }
 a:-webkit-any-link{
     text-decoration: none;
@@ -123,6 +125,9 @@ a.anchor {
     display: flex;
     border-left: 3px double black;
     margin-right: $pad1;
+    margin-left: $pad;
+    justify-content: space-around;
+    flex-flow: column nowrap;
 }
 .footer{
     background-color: $offWhite;
@@ -150,4 +155,14 @@ a.anchor {
 .lgsymb{
     font-size: 4rem;
     font-weight: bolder;
+}
+#image{
+    height: auto;
+    overflow: hidden;
+}
+.pink{
+    color: pink;
+}
+.r1 img{
+    height: 20px;
 }

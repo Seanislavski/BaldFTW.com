@@ -423,6 +423,12 @@ body {
 a:link {
   color: #5BFFFF; }
 
+a:visited {
+  color: #e3f6f6; }
+
+a:active {
+  color: #e3f6f6; }
+
 a:-webkit-any-link {
   text-decoration: none; }
 
@@ -516,7 +522,10 @@ a.anchor {
   grid-area: 1/4/3/5;
   display: flex;
   border-left: 3px double black;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  margin-left: 1rem;
+  justify-content: space-around;
+  flex-flow: column nowrap; }
 
 .footer {
   background-color: #F7F7F7;
@@ -544,5 +553,15 @@ a.anchor {
 .lgsymb {
   font-size: 4rem;
   font-weight: bolder; }
+
+#image {
+  height: auto;
+  overflow: hidden; }
+
+.pink {
+  color: pink; }
+
+.r1 img {
+  height: 20px; }
 
 /*# sourceMappingURL=main.css.map */
