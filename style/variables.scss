@@ -29,8 +29,13 @@ $bg3: "../images/bg3.jpg";
 $me: "./images/me.jpg";
 
 //fonts
+$iconSet:           'Typicons';
 $fontStack:        Alegreya, 'Times New Roman';
 $sansStack:     'Raleway','Open Sans', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Raleway');
-
+@import url('images/typicons.ttf');
+@font-face {
+    font-family: 'Typicons';
+    src: url('images/typicons.ttf') format ('truetype');
+}
 
