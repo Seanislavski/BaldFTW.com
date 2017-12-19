@@ -17,6 +17,7 @@ body {
     max-width: 100%;
     // fill: currentColor;
 }
+
 svg {
     // fill: currentColor;
 }
@@ -84,7 +85,7 @@ a.anchor {
 }
 .box{
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top right;
     background-size: cover;
     top: 0;
     height: 90vh;
@@ -154,8 +155,17 @@ a.anchor {
     // justify-content: flex-end;
     // align-items: center;
 }
-.leftBarNav {
+.noStyle {
     list-style-type: none;
+}
+.head {
+    background-color: blue;
+    align-self: flex-end;
+    align-text: right;
+    width: 200px;
+}
+.post {
+    background-color: red;
 }
 #title{
     font-size: 2rem;
@@ -190,8 +200,10 @@ a.anchor {
     font-family: $iconSet;
 }
 #darrow{
+    display: flex;
     fill: $highlightColor;
     height: 4rem;
     z-index: 1;
     position: absolute;
+    align-content: center;
 }

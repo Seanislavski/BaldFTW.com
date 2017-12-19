@@ -481,7 +481,7 @@ a.anchor {
 
 .box {
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top right;
   background-size: cover;
   top: 0;
   height: 90vh;
@@ -535,8 +535,17 @@ a.anchor {
   padding-right: 4rem;
   display: flex; }
 
-.leftBarNav {
+.noStyle {
   list-style-type: none; }
+
+.head {
+  background-color: blue;
+  align-self: flex-end;
+  align-text: right;
+  width: 200px; }
+
+.post {
+  background-color: red; }
 
 #title {
   font-size: 2rem; }
@@ -568,9 +577,11 @@ a.anchor {
   font-family: "Typicons"; }
 
 #darrow {
+  display: flex;
   fill: #5BFFFF;
   height: 4rem;
   z-index: 1;
-  position: absolute; }
+  position: absolute;
+  align-content: center; }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
