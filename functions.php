@@ -15,13 +15,13 @@ function getDynamicData($table, $column, $id){
 
 function get_header($id){
     $dyndat = getDynamicData('posts', 'header', $id);
-    echo '<br><div class="head">' . $dyndat . '</div>';
+    echo $dyndat; //'<br><div class="head">' . $dyndat . '</div>';
 }
 
 function get_post($id){
     $header = get_header($id);
     $dyndat = getDynamicData('posts', 'post', $id);
-    echo $header . '<br><div class="post">' . $dyndat . '</div>';
+    echo $header . $dyndat; //'<br><div class="post">' . $dyndat . '</div>';
 }
 
 ?>
