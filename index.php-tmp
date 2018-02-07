@@ -1,6 +1,12 @@
 <?php
 require_once ('./db_connect.php');
 require_once ('./functions.php');
+global $column, $post, $get_data;
+$data = getTableData('posts');
+$wh   = $data['header'];
+$t3   = trim(substr($wh, -3, 3));
+$p    = $data['post'];
+global $get_data;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,11 +14,10 @@ require_once ('./functions.php');
     <meta charset="UTF-8">
     <title>Bald (for the) win . com</title>
     <link rel="stylesheet" href="style/style.css">
-
 </head>
 <body>
 
-    <!-- <span class="mainBody"> <!-- Div 1--> -->
+    <!-- <span class="mainBody"> <!-- Div 1-->
     <a class="anchor" id="top"></a>
         <div class="nav">
             <h1 id="title">Sean Baldwin</h1>
@@ -30,13 +35,14 @@ require_once ('./functions.php');
             <div class="inBox l1">
                 <ul class="noStyle listContainer">
                     <li class="">
-                        <a href="#">
+                        <a href="#<?php
+echo $t3;
+?>">
 <?php
-global $column, $post, $get_data;
-$data = getTableData('posts');
-foreach ($get_data as $value) {
-	print_r($row['id']);
-};
+// foreach($get_data as $value){
+//     print_r($row['header']);
+// };
+echo $data['header'];
 ?>
 </a>
                     </li>
@@ -48,33 +54,15 @@ foreach ($get_data as $value) {
             </div>
             <div class="inBox c1">
                 <ul class="noStyle listContainer">
+                <a href="
 <?php
-global $get_data;
-// print_r($data);
-// echo '$data[\'id\'] ->' ;
-// print_r($data['id']);
-// echo ' <- ';
-// print_r($row['id']);
-print_r($get_data);
-foreach ($row as &$value) {
-	echo $value.'<br>';
-	print_r($row['header']);
-	echo '</li><li><br>';
-	print_r($row['post']);
-	echo '</li> &nbsp; <br>';
-
-}
-
-// foreach ($row as $post) {
-//     echo '<li>';
-//         print_r($row['header']);
-//         echo '</li><li><br>';
-//         print_r($row['post']);
-//     echo "</li> &nbsp;"
-// ;}
-// print_r($post);
+echo $t3;
 ?>
-</ul>
+                "><a class="anchor" id="<?php
+echo $t3;
+?>"></a>
+                 Test 123
+                </ul>
             </div>
             <div class="inBox r1 listContainer">
                 <!-- <span id="image"> -->
@@ -82,27 +70,26 @@ foreach ($row as &$value) {
                 <!-- </span> -->
                 Sean Baldwin, 2015
             </div>
-            <a class="lgsymb darrow" href="#middle">
-                <svg version="1.2" baseProfile="tiny" xmlns="htt:p//www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M16.707 13.293c-.391-.391-1.023-.391-1.414 0l-2.293 2.293v-7.586c0-.552-.447-1-1-1s-1 .448-1 1v7.586l-2.293-2.293c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l4.707 4.707 4.707-4.707c.391-.391.391-1.023 0-1.414z"/></svg>
-            </a>
             </div>
+            <a class="lgsymb darrow" href="#middle">
+                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <polyline points="18 14, 12 20, 6 14"/>
+                    <!-- <polyline points="6 10 12 4 18 10"/> -->
+                </svg>
+            </a>
         </section>
         <section class="box box2" id="box2">
             <a class="anchor" id="middle"></a>
             <h2 class="inBox termite">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ea facere quidem tempore libero quaerat illo voluptas iusto consequatur perferendis. Animi iusto, repellat corporis voluptatum dolores nihil, obcaecati ducimus. Earum.
             </h2>
-            Right Here ->
-        Test Test
-            <-
 
-        <a class="lgsymb darrow" href="#bottom">
-                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="uarrow" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <a class="lgsymb darrow" href="#bottom">
+                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="12" y1="20" x2="12" y2="4"/>
                     <polyline points="18 14, 12 20, 6 14"/>
-                    <!-- <polyline points="6 10 12 4 18 10"/> -->
                 </svg>
-                <!-- <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path d="M16.707 13.293c-.391-.391-1.023-.391-1.414 0l-2.293 2.293v-7.586c0-.552-.447-1-1-1s-1 .448-1 1v7.586l-2.293-2.293c-.391-.391-1.023-.391-1.414 0s-.391 1.023 0 1.414l4.707 4.707 4.707-4.707c.391-.391.391-1.023 0-1.414z"/></svg> -->
             </a>
         </section>
         <section class="box box3" id="box3">
@@ -111,10 +98,9 @@ foreach ($row as &$value) {
                 Sean Baldwin is a web developer and systems administrator based in New York City. He has over 5 years of experience working for managed service providers providing his customers with world class customer service, computer repair, network maintenance / administration and more.
             </h3>
             <a class="toptxt" href="#top">
-                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="uarrow" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="arrow" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="12" y1="20" x2="12" y2="4"/>
-                    <!-- <polyline points="18 14, 12 20, 6 14"/> -->
-                    <polyline points="6 10 12 4 12 10"/>
+                    <polyline points="6 10 12 4 18 10"/>
                 </svg>
             </a>
         </section>

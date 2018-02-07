@@ -3,14 +3,14 @@ global $conn;
 
 function getTableData($table) {
 	global $conn, $get_data, $row;
-	$query    = "SELECT * FROM $table";
+	$query    = "SELECT * FROM $table ORDER BY id DESC LIMIT 0, 10";
 	$get_data = mysqli_query($conn, $query);
 	if (!$get_data) {
 		echo 'MySQL Error: '.mysqli_error($conn);
 		exit;
 	}
+	// return $get_data;
 	$row = mysqli_fetch_assoc($get_data);
-	return $get_data;
 	return $row;
 	;
 }

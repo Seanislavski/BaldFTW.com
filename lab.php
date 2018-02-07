@@ -13,7 +13,7 @@ global $get_data;
 <head>
     <meta charset="UTF-8">
     <title>Bald (for the) win . com</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/stylelab.css">
 </head>
 <body>
 
@@ -35,15 +35,25 @@ global $get_data;
             <div class="inBox l1">
                 <ul class="noStyle listContainer">
                     <li class="">
-                        <a href="#<?php
-                        echo $t3;
-                        ?>">
-                            <?php
-                            // foreach($get_data as $value){
-                            //     print_r($row['header']);
-                            // };
-                            echo $data['header'];
-                            ?>
+                        <?php
+                            $query = sprintf("select * from posts");
+                            $result = mysqli_query($conn, $query);
+                            if ($result) {
+                              while($row = mysqli_fetch_array($result)) {
+                                echo '<a href="#';
+                                $r2 = $row['header'];
+                                $tag = substr($r2,-3,3);
+                                echo $tag;
+                                echo '">';
+                                echo $r2;
+                                // echo $row['header'];
+                                echo '<br><br>';
+                              }
+                            }
+                            else {
+                              echo mysql_error();
+                            }
+                        ?>
 
                         </a>
                     </li>
@@ -62,7 +72,24 @@ global $get_data;
                 "><a class="anchor" id="<?php
                 echo $t3;
                  ?>"></a>
-                 Test 123
+                <?php
+                    $query = sprintf("select * from posts");
+                    $result = mysqli_query($conn, $query);
+                    if ($result) {
+
+                    while($row = mysqli_fetch_array($result)) {
+                        $r2 = $row['header'];
+                        $tag = substr($r2,-3,3);
+
+                        echo $tag . '&nbsp;';
+                        echo $row['post'];
+                        echo '<br><br>';
+                      }
+                    }
+                    else {
+                      echo mysql_error();
+                    }
+                ?>
                 </ul>
             </div>
             <div class="inBox r1 listContainer">
